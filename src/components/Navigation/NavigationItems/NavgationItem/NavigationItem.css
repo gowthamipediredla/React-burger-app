@@ -1,0 +1,51 @@
+.NavigationItem{
+    margin:10px 0;
+    box-sizing:border-box;
+    width:100%;
+    display:block
+}
+.NavigationItem a{
+    color:white;
+    text-decoration: none;
+    width:100%;
+    padding:16px 10px;
+    border-bottom:5px solid transparent; /* //visible when hover */
+    box-sizing:border-box;
+    display:block
+}
+
+.NavigationItem a:hover,
+.NavigationItem a:active,
+.NavigationItem a.active{
+    background-color: blue;
+    color:#40a4cb;
+  
+
+}
+@media (min-width:500px){
+    .NavigationItem{
+        margin:0;
+        width:auto;
+        height:100%;
+        display:flex;
+        align-items: center
+    }
+    .NavigationItem a{
+        color:white    ;
+        
+        height:100%;
+        padding:16px 10px;
+        border-bottom:5px solid transparent; /* //visible when hover */
+       
+    }
+    
+     .NavigationItem a:hover, 
+    .NavigationItem a:active, /*//css modules will take class names here and convert then to unique class names .. theredore if we put name as active, it wont be active but will be having some hash.. will be unique*/
+    .NavigationItem a.active{
+        background-color:#8f5c2c;
+        border-bottom:4px solid #40A4CB;
+        color:black;
+      
+    }
+    
+}

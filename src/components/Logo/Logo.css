@@ -1,0 +1,15 @@
+.Logo{
+    background-color:rgb(213, 213, 214);
+    padding:8px;
+    height:100%;
+    box-sizing:border-box;
+    border-radius:5px
+}
+.Logo img{
+    height:100%
+}
+
+/* @media(min-width:465px){
+    .Logo{
+    height:80%;
+}} */

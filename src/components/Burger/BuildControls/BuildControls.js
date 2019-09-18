@@ -9,7 +9,14 @@ const controls=[
     {label:'Cheese',type:'cheese'}
 
 ]
-const builtcontrols=(props)=>(
+
+   
+   // console.log('[BuildControls.js] Component will Mount')
+
+
+const builtcontrols=(props)=>{  
+   // console.log(props)
+    return(
     <div className={classes.BuildControls}>
          <p>current price of your Burger:<strong>{props.price.toFixed(2)}</strong>.Rs</p>
         {    controls.map(ctrl=>(
@@ -19,13 +26,14 @@ const builtcontrols=(props)=>(
              added={()=>props.ingredientsadded(ctrl.type)}
              removed={()=>props.ingredientsremoved(ctrl.type)}
              disabled={props.disabled[ctrl.type]}
-             price={props.price}
+            // price={props.price}
              />
          ) )}
-         <button className={classes.OrderButton} disabled={!props.purchasestate} onClick={props.ordered}>ORDER NOW</button>
+         <button className={classes.OrderButton} disabled={!props.purchasestate} onClick={props.ordered}>{props.isAuth?'ORDER NOW':'SIGN UP FOR ORDER'}</button>
 
-    </div>
+    </div>)
+    }
 
-);
+;
 
 export default builtcontrols;

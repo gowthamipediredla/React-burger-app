@@ -1,0 +1,35 @@
+.Input{
+    width:100%;
+    padding:8px;
+    box-sizing:border-box /* imp to calculate input box ccrding to outer box */
+}
+.Label{
+
+    font-weight: bold;
+    display:block;
+    margin-bottom:8px
+}
+
+.Inputelement{
+    outline:none;
+    border:1px solid #eee;
+    background-color: white;
+    padding:8px 10px;
+    font:inherit;
+    display: block; /*display: inline; throws an error with width */
+    width:100%;
+    box-sizing:border-box
+    
+
+}
+
+.Inputelement:focus{
+    outline:none;
+    background-color: white;
+
+}
+
+.Invalid{
+    border: 1px solid red;
+    background-color:salmon;
+}

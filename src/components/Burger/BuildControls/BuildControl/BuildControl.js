@@ -1,6 +1,12 @@
 import React from 'react'
 import class1 from './BuildControl.css'
+
+   // console.log(this.props.ingredients)
+   // console.log('[Buildcontrol.js] Component will Mount')
+
+
 const buildcontrol=(props)=>{
+   // console.log(props)
     return(
      
        
