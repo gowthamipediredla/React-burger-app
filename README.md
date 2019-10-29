@@ -18,7 +18,7 @@ Then he can place order
 ## Development setup
 # Windows:
 Clone the project
-npm install
-npm start
-Now the project rums in development on localhost:300
+ npm install
+ npm start
+ Now the project rums in development on localhost:300
 
