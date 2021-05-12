@@ -20,5 +20,5 @@ Then he can place order
 Clone the project
  npm install
  npm start
- Now the project rums in development on localhost:300
+ Now the project rums in development on localhost:3000
 
